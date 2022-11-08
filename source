@@ -1,0 +1,8 @@
+if isfile("Vision/Core/auth.txt") then
+  delfile("Vision/Core/auth.txt")
+  writefile("Vision/Core/auth.txt", newkey)
+else
+  warn("Error: Auth doesn't exist in Core")
+then
+ game.Players.LocalPlayer:Kick("Key replaced, restart Roblox & execute Vision.")
+end
